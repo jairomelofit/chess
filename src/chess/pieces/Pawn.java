@@ -26,7 +26,6 @@ public class Pawn extends ChessPiece {
 
 		Position p = new Position(0, 0);
 
-		// above
 		if (getColor() == Color.WHITE) {
 			p.setValues(position.getRow() - 1, position.getColumn());
 			if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
@@ -60,7 +59,6 @@ public class Pawn extends ChessPiece {
 				}
 			}
 		}
-		// below
 		else {
 			p.setValues(position.getRow() + 1, position.getColumn());
 			if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
